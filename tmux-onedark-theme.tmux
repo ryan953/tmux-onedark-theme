@@ -1,4 +1,5 @@
 #!/bin/bash
+terminal_black="#282828"
 onedark_black="#282c34"
 onedark_blue="#61afef"
 onedark_yellow="#e5c07b"
@@ -58,13 +59,11 @@ setw "window-status-activity-attr" "none"
 
 setw "window-status-separator" ""
 
-set "window-style" "fg=$onedark_comment_grey"
+set "window-style" "fg=$onedark_white"
 set "window-active-style" "fg=$onedark_white"
 
-set "pane-border-fg" "$onedark_white"
-set "pane-border-bg" "$onedark_black"
-set "pane-active-border-fg" "$onedark_green"
-set "pane-active-border-bg" "$onedark_black"
+set "pane-border-style" "fg=$terminal_black bg=$terminal_black"
+set "pane-active-border" "fg=$onedark_green bg=$terminal_black"
 
 set "display-panes-active-colour" "$onedark_yellow"
 set "display-panes-colour" "$onedark_blue"
