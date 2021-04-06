@@ -78,7 +78,7 @@ set "@prefix_highlight_output_prefix" "  "
 
 status_widgets=$(get "@onedark_widgets")
 time_format=$(get "@onedark_time_format" "%R")
-date_format=$(get "@onedark_date_format" "%d/%m/%Y")
+date_format=$(get "@onedark_date_format" "%Y/%m/%d")
 
 set "status-right" "#[fg=$onedark_white,bg=$onedark_black,nounderscore,noitalics]${time_format} | ${date_format} #[fg=$onedark_white, bg=$onedark_visual_grey] ${status_widgets} #[fg=$onedark_black,bg=$onedark_green,bold] #h "
 set "status-left" "#[fg=$onedark_black,bg=$onedark_green,bold] #S #{prefix_highlight}"
